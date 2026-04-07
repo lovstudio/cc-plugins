@@ -33,7 +33,7 @@
 
 ```bash
 # Add marketplace
-/plugin marketplace add MarkShawn2020/claude-code-plugin
+/plugin marketplace add lovstudio/claude-code-plugin
 
 # Install plugin
 /plugin install lovstudio@claude-code-plugin
