@@ -1,0 +1,3 @@
+[submodule "skills-external"]
+	path = skills-external
+	url = git@github.com:lovstudio/skills.git
