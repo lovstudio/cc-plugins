@@ -1,0 +1,10 @@
+# Changelog for kill-emoji
+
+## v1.0.0 - 2025-01-25
+- 初始版本
+- 基于 lanna-mirror 项目重构 emoji 的实践经验
+- 支持扫描、分类、映射、替换、验证完整流程
+- 内置常用 emoji → lucide-react 图标映射表
+- 区分 UI 交互/业务数据/调试日志三类 emoji
+
+Author: 公众号：手工川

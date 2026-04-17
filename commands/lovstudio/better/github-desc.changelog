@@ -1,0 +1,12 @@
+# Changelog for lovstudio/better-github-desc
+
+## v1.1.0 - 2025-12-24
+- Added website URL support with default `https://lovstudio.ai/app/$project_name`
+- Updated description extraction to handle HTML `<strong>` tags
+- Added project name detection from package.json or directory name
+
+## v1.0.0 - 2025-12-21
+- Migrated from `better-github-desc.md` to `lovstudio/better-github-desc.md`
+- Reorganized into lovstudio namespace
+
+Author: 公众号：手工川

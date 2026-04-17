@@ -1,0 +1,19 @@
+# Changelog for lovstudio/install-design
+
+## v1.2.1 - 2025-12-25
+- 修正主题色：#CC785C → #E66F4C（更鲜艳的陶土色）
+- 更新 oklch 值以匹配新色值
+
+## v1.2.0 - 2025-12-21
+- 新增「全局配置模式」：在 ~/.claude 目录执行时仅配置全局 CLAUDE.md
+- 改进错误提示：非前端项目时提示可用全局配置模式
+- 添加 pwd 到 allowed-tools
+
+## v1.1.0 - 2025-12-21
+- Migrated from `install-lovstudio-design.md` to `lovstudio/install-design.md`
+- Reorganized into lovstudio namespace for better command organization
+
+## v1.0.0 - Initial
+- Original implementation as `install-lovstudio-design.md`
+
+Author: 公众号：手工川

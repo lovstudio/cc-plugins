@@ -1,0 +1,7 @@
+# Changelog for lovstudio/repo-takeover
+
+## v1.0.0 - 2025-12-21
+- Migrated from `repo/takeover.md` to `lovstudio/repo-takeover.md`
+- Reorganized into lovstudio namespace
+
+Author: 公众号：手工川

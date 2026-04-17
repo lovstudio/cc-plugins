@@ -1,0 +1,46 @@
+# Changelog for gen-logo
+
+## v5.0.0 - 2025-12-25
+### Breaking Changes
+- 首次生成不再询问风格偏好，完全自动化
+- 基于项目功能特性设计，不再字面解读项目名
+
+### New Features
+- **项目类型识别**: 自动分析依赖判断项目类型（Web框架/CLI/桌面应用/库/AI）
+- **类型驱动设计**: 每种项目类型有对应的设计关键词
+- **功能优先原则**: 明确"项目名含 love 不意味着要用爱心"
+
+### Improvements
+- 更精简的反馈提示
+- 移除冗余的设计原则参考表
+- 更清晰的 Prompt 模板结构
+
+## v4.1.0 - 2025-12-25
+### New Features
+- **Tray Icon 自动生成**: Tauri 项目发布时自动生成 macOS 菜单栏图标
+  - 白色 template icon，自动适配深浅模式
+  - 38x44 内容尺寸，高度几乎填满，视觉饱满
+  - 56x44 画布尺寸，横向各 9px 间距，与其他 app 图标对齐
+
+## v4.0.0 - 2025-12-25
+### Breaking Changes
+- 输出路径改为 `./assets/logo-drafts/v{N}-{desc}.{ext}`
+- 需要用 `--use` 或 `--publish` 确认发布
+
+### New Features
+- **版本管理**: 每次生成保存为新版本，不覆盖
+- **迭代模式**: 基于用户反馈持续改进
+- **发布确认**: `--use vN` 选用，`--publish vN` 选用并提交
+- **设计原则参考**: 内置 Ubuntu/Grok/Apple 风格关键词
+
+### Improvements
+- 更清晰的工作流程说明
+- 更好的命名规则 `v{N}-{short_desc}`
+- 添加 AskUserQuestion 支持交互式反馈
+
+## v3.1.0 - Previous
+- 基础 PNG + SVG 生成
+- 自动去白底
+- 项目信息自动分析
+
+Author: 公众号：手工川

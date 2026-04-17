@@ -1,0 +1,21 @@
+# Changelog for meta-command
+
+## v4.2.0 - 2025-12-26
+- 新增 Step 2: Clarify Requirements（苏格拉底式追问）
+- 添加 AskUserQuestion 到 allowed-tools
+- 参考 brainstorm.md 的追问技巧
+- 明确何时追问、何时跳过
+
+## v4.1.0 - 2025-12-25
+- Added changelog file (retroactive)
+- Current stable version
+
+## v4.0.0 - 2025-12-XX
+- Major redesign with iteration mode
+- Added version bump rules
+- Added design principles
+
+## v1.0.0 - Initial
+- Basic command generation
+
+Author: 公众号：手工川

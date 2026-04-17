@@ -1,0 +1,22 @@
+# Changelog for rename-project
+
+## v2.0.0 - 2026-01-07
+- **全自动化**: 移除所有交互确认，一键完成全部操作
+- **智能检测**: 优先从 GitHub remote URL 获取项目名（最权威）
+- **自动推送**: 替换后自动 git commit + push
+- **自动 GitHub 重命名**: 自动执行 `gh repo rename`
+- **替代 brand-migrate**: 本命令现为项目重命名的唯一推荐方式
+
+## v1.1.0 - 2025-01-18
+- 新增 GitHub 仓库自动重命名 (gh repo rename)
+- 简化确认选项为单个问题，默认"全部执行"
+- 添加 displayName 变体处理
+- 扩展扫描范围 (extension.ts, meta.toml)
+- 改进报告格式，使用 checkmark 符号
+
+## v1.0.0 - Initial
+- 基础项目重命名功能
+- 支持文件引用更新
+- 支持文件夹重命名
+
+Author: 公众号：手工川

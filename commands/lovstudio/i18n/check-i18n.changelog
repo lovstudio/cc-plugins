@@ -1,0 +1,12 @@
+# Changelog for check-i18n
+
+## v1.0.0 - 2025-12-29
+- 初始版本
+- 支持 Next.js (next-intl), Vite React (react-i18next), Vue (vue-i18n)
+- 自动检测项目类型和现有 i18n 配置
+- 扫描用户可见硬编码（排除技术性内容）
+- 报告 + 确认后修复模式
+- 自动生成合理的 i18n key
+- 集成 git commit-with-context
+
+Author: 公众号：手工川

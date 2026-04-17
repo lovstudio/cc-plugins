@@ -1,0 +1,17 @@
+# Changelog for git-commit-with-context
+
+## v1.1.0 - 2025-12-27
+- **Breaking**: 改用选择性暂存，只 `git add` 本次会话涉及的文件
+- 避免使用 `git add -A` 导致与其他会话的提交冲突
+- 新增 "Build file list" 步骤，收集会话中修改的文件列表
+- 更新示例展示显式文件路径的用法
+
+## v1.0.0 - 2025-12-18
+- Initial version
+- Context-first approach: analyze conversation changes before git commands
+- Skip git status/diff for faster execution
+- Auto commit with conventional commit format
+- Chinese commit messages by default
+
+Author: 公众号：手工川
+Created: 2025-12-18

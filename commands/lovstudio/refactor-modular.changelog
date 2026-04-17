@@ -1,0 +1,23 @@
+# Changelog for refactor-modular
+
+## v1.2.0 - 2025-12-24
+- 添加 `argument-hint: <file-path>` 让用户知道如何传参
+- 改用 `$1` 位置参数替代 `$ARGUMENTS`（更精确）
+- 处理 `@` 前缀问题（用户可能用 @path 语法）
+- 明确空参数时使用 AskUserQuestion 询问
+
+## v1.1.0 - 2025-12-24
+- 修复 YAML frontmatter 格式错误（aliases 和 --- 在同一行）
+- 移除无效的 aliases 字段（Claude Code 不支持此字段）
+- 明确参数为空时的处理逻辑：立即询问用户
+- 改进末尾指令：从等待输入改为立即执行
+
+## v1.0.0 - 2025-12-16
+- Initial version
+- 支持识别类型、常量、工具函数、Hooks、组件、服务等模块
+- 遵循 SOLID 原则进行拆分
+- 自动生成目录结构和统一导出
+- 支持 React/Vue/通用 TypeScript 项目
+
+Author: 公众号：手工川
+Created: 2025-12-16

@@ -1,0 +1,9 @@
+# Changelog for project-name
+
+## v1.0.0 - 2026-02-27
+- Initial creation
+- 生成 3 组候选（创意名 + 描述名）
+- 自动选择命名风格（kebab/snake）
+- Mac 文件夹名兼容
+
+Author: 公众号：手工川

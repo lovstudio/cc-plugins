@@ -1,0 +1,8 @@
+# Changelog for lovstudio/think
+
+## v1.0.0 - 2025-12-21
+- Migrated think commands to lovstudio/think/ namespace
+- think.md, think-hard.md, think-harder.md, think-ultra.md
+- Shortcuts: /t, /tt, /ttt, /tttt (symlinks)
+
+Author: 公众号：手工川

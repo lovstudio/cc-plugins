@@ -1,0 +1,36 @@
+# Changelog for install-tauri-logo
+
+## v4.0.0 - 2025-12-25
+### Breaking Changes
+- **移除 Step 3 (Sync to public/)**: Web 相关的 logo 配置已拆分到 `/install-web-logo`
+- 步骤重新编号：Step 4-7 → Step 3-6
+- **新增 Step 7**: 完成后询问用户是否继续执行 `/install-web-logo`
+
+## v3.1.0 - 2025-12-25
+- **macOS 图标规范**: 824x824 圆角矩形在 1024x1024 画布内，与系统 app 大小一致
+- **Logo 比例**: 60% → 65%，视觉更饱满
+- **主题色修正**: #E66F4C → #E76F4D
+
+## v3.0.1 - 2025-12-25
+- 修正主题色：#D97757 → #E66F4C（与设计系统保持一致）
+
+## v3.0.0 - 2025-12-25
+### Breaking Changes
+- **Dock Icon 重新设计**: 圆角矩形背景（陶土色 #D97757）+ 白色 logo
+  - 参考 macOS Big Sur+ 系统 app 风格
+  - 圆角比例 ~22%，logo 缩放 60%
+- **Tray Icon 规格更新**:
+  - 改为白色 template icon（原为黑色）
+  - 38x44 内容 + 56x44 画布，横向间距与其他 app 对齐
+
+## v2.1.0 - 2025-12-25
+- Add Step 3: Sync logo to public/ directory for frontend usage
+- Fix: Frontend `<img src="/logo.png">` references now get updated automatically
+
+## v2.0.0 - 2025-12-25
+- Initial versioned release
+- Use official `npx tauri icon` for icon generation
+- Support tray icon generation with ImageMagick
+- Optional Rust code modification for custom tray icons
+
+Author: 公众号：手工川

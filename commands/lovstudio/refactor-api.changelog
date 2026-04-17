@@ -1,0 +1,10 @@
+# Changelog for refactor-api
+
+## v1.0.0 - 2025-12-27
+- Initial release
+- Support Tauri/REST/GraphQL backend detection
+- Identify redundant patterns: file reads, CRUD, path getters
+- Auto-refactor with frontend call updates
+- TypeScript/Rust validation
+
+Author: 公众号：手工川

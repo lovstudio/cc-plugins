@@ -1,0 +1,13 @@
+# Changelog for init-port
+
+## v1.1.0 - 2025-12-25
+- Fix: Next.js 项目必须同时更新 `next dev -p <port>`（Next.js 不读取 .env 中的 PORT 变量）
+- Improve: 按项目类型（Next.js/Vite/其他）区分配置策略
+
+## v1.0.0 - 2025-12-25
+- Initial release
+- Generate stable port from project name (range 3000-8999)
+- Auto-update .env, vite.config.ts, package.json scripts
+- Idempotent operation
+
+Author: 公众号：手工川

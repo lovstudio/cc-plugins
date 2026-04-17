@@ -1,0 +1,18 @@
+# Changelog for output
+
+## v1.2.0 - 2025-12-16
+- 文件名可选，无则生成时间戳名
+
+## v1.1.0 - 2025-12-16
+- 命令重命名：md-output → output
+- 支持多种格式：md/txt/json/yaml
+- 根据扩展名自动识别格式
+- 无扩展名默认添加 .md
+
+## v1.0.0 - 2025-12-16
+- Initial version
+- 支持生成可嵌套的 markdown 文件
+- 禁用三反引号，改用 4 空格缩进代码块
+
+Author: 公众号：手工川
+Created: 2025-12-16

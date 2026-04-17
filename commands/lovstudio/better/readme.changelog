@@ -1,0 +1,26 @@
+# Changelog for lovstudio/better-readme
+
+## v2.7.0 - 2025-12-30
+- 新增 Step 7b: 自动添加 Star History 可视化图表
+- 使用 star-history.com API 生成动态 SVG 图表
+- 自动从 git remote 提取 owner/repo 信息
+
+## v2.6.1 - 2024-12-24
+- 有 logo 时询问用户是否重新生成
+
+## v2.6.0 - 2024-12-24
+- Step 4 重构：检查多个位置的现有 logo
+- 无 logo 时调用 `/gen-logo` 生成项目专属 logo（替代复制默认 logo）
+- 新增 logo 选择优先级：SVG > PNG，assets > public > root
+- 支持 Tauri 项目的 `src-tauri/icons/icon.png`
+
+## v2.5.0 - 2025-12-22
+- Add Step 5: Check LICENSE file - creates Apache-2.0 LICENSE if missing
+- Include LICENSE in git commit step
+- Renumbered steps (7→8, 8→9)
+
+## v2.3.0 - 2025-12-21
+- Migrated from `better-readme.md` to `lovstudio/better-readme.md`
+- Reorganized into lovstudio namespace
+
+Author: 公众号：手工川

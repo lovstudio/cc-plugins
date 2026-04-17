@@ -1,0 +1,10 @@
+# Changelog for deploy-vercel
+
+## v1.0.0 - 2025-12-18
+- 初始版本
+- 支持 Vite/Next.js/CRA 项目检测
+- 自动创建 vercel.json 配置 SPA 路由
+- 自动同步 .env 公开环境变量
+- 支持 --prod/--preview/--no-env/--link-only 参数
+
+Author: 公众号：手工川

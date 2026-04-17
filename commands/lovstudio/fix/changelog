@@ -1,0 +1,24 @@
+# Changelog for lovstudio/fix
+
+## v1.1.0 - 2025-12-21
+- Migrated fix commands to lovstudio/fix/ namespace
+- fix.md → lovstudio/fix/fix.md
+- fix-by-add-log.md → lovstudio/fix/by-add-log.md
+- fix-until-no-error.md → lovstudio/fix/until-no-error.md
+
+## v1.0.0 - 2025-01-25 (fix.md)
+- Initial version of error diagnosis and fixing assistant
+- Implements comprehensive error analysis workflow
+- Supports various error types (syntax, runtime, configuration, dependencies)
+
+## v1.0.0 - 2025-11-29 (by-add-log.md)
+- Initial version
+- 支持多语言日志格式（JS/TS、Python、Go）
+- 策略性日志添加流程
+
+## v1.0.0 - 2025-10-16 (until-no-error.md)
+- Automated error fixing loop until success
+- Incremental validation and root cause focus
+- Infinite loop prevention mechanism
+
+Author: 公众号：手工川

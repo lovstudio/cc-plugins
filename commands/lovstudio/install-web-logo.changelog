@@ -1,0 +1,27 @@
+# Changelog for install-web-logo
+
+## v1.2.0 - 2025-12-26
+- **Step 3**: Add `icon-192x192.png` and `icon-512x512.png` aliases for manifest.json compatibility
+- **Step 3**: Add `favicon.svg` generation for modern browsers
+- **Step 5**: Enhanced to explicitly search for `*Icon.tsx` and `*Logo.tsx` components
+- **Step 5**: Add clear before/after code examples for refactoring inline SVG to Image component
+- **Step 7/8**: Update manifest.json and HTML head examples to use `icon-*.png` naming
+- **Step 9**: Add "Logo components updated" to checklist
+- Fix theme color from `#E76F4D` to `#D97757` (correct Lovstudio 陶土色)
+
+## v1.1.0 - 2025-12-26
+- Add Step 4: Sync logo to src/assets for component imports
+- Add Step 5: Scan and fix code references (import statements, img src)
+- Update checklist to include src/assets and code reference fixes
+- Fix issue where component imports (e.g., MainHeader.tsx) still referenced old logos
+
+## v1.0.0 - 2025-12-25
+- Initial release
+- Support for favicon.ico (multi-size), PNG favicons, Apple Touch Icon
+- Android Chrome icons (192x192, 512x512) for PWA
+- OG image generation (1200x630) for social sharing
+- manifest.json creation/update for PWA
+- Auto-detect project type (Next.js, Vite, Angular, generic)
+- Update HTML head references guidance
+
+Author: 公众号：手工川

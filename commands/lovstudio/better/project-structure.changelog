@@ -1,0 +1,7 @@
+# Changelog for lovstudio/better-project-structure
+
+## v2.0.0 - 2025-12-21
+- Migrated from `better-project-structure.md` to `lovstudio/better-project-structure.md`
+- Reorganized into lovstudio namespace
+
+Author: 公众号：手工川

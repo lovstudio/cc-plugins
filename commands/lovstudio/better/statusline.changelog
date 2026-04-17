@@ -1,0 +1,7 @@
+# Changelog for lovstudio/better-statusline
+
+## v1.0.0 - 2025-12-21
+- Migrated from `better-statusline.md` to `lovstudio/better-statusline.md`
+- Reorganized into lovstudio namespace
+
+Author: 公众号：手工川

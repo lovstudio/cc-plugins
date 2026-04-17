@@ -1,0 +1,9 @@
+# Changelog for distill-to-system
+
+## v1.0.0 - 2025-12-31
+- Initial release
+- Auto-detect global vs project scope
+- Support manual trigger and AI proactive suggestions
+- Minimal format: 1-3 lines with ref links
+
+Author: 公众号：手工川

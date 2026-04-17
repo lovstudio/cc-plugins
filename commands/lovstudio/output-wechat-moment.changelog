@@ -1,0 +1,8 @@
+# Changelog for output-wechat-moment
+
+## v1.0.0 - 2026-03-03
+- Initial version: pure text output for WeChat Moments
+- Auto-infer content from conversation context
+- 300 char limit guidance, no markdown, no emoji spam
+
+Author: 公众号：手工川

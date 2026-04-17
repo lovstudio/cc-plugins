@@ -1,0 +1,13 @@
+# Changelog for lovinsp
+
+## v1.3.0 - 2025-12-27
+- Fix: API 名称从 `LovinspPlugin` 改为 `lovinspPlugin`（小写开头）
+- Fix: Next.js Turbopack 配置改为 `rules: lovinspPlugin({ bundler: 'turbopack' })`
+- Add: 分开 Next.js Turbopack 和 Webpack 两种配置示例
+
+## v1.2.0
+- Initial tracked version
+- Support Vite, Webpack, Next.js, Nuxt
+- Auto-migrate from code-inspector
+
+Author: 公众号：手工川

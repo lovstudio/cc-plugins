@@ -1,0 +1,12 @@
+# Changelog for output-for-article
+
+## v1.1.0 - 2026-03-07
+- Changed storage from fixed ~/@documents/articles to ./articles (relative to cwd)
+
+## v1.0.0 - 2026-03-07
+- Initial version, based on output.md
+- Fixed output directory to ~/@documents/articles/
+- Default filename prefix changed to `article-`
+- Auto mkdir -p for target directory
+
+Author: 公众号：手工川

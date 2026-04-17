@@ -1,0 +1,11 @@
+# Changelog for kb-organize
+
+## v1.0.0 - 2025-12-18
+
+- Initial version
+- Actions: scan, archive, dedup, reorg, images, lint
+- Tailored for my-documents knowledge base structure
+- Idempotent operations with pre-checks
+
+Author: 公众号：手工川
+Created: 2025-12-18

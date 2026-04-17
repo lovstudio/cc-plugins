@@ -1,0 +1,16 @@
+# Changelog for clone-rebrand
+
+## v1.0.0 - 2025-01-27
+- Initial release
+- 基于 LovSigil 迁移实战经验设计
+- 交互式收集项目信息（名称、描述、GitHub、Vercel）
+- 智能品牌替换：核心配置、i18n、组件、文档
+- 自动检测框架类型（Next.js/Vite/Vue）
+- 自动检测 i18n 方案（next-intl/react-i18next/vue-i18n）
+- GitHub 仓库创建/更新
+- Vercel 部署 + 自定义域名
+- Cloudflare DNS 自动配置（如有 API key）
+- 使用 TodoWrite 追踪迁移进度
+- 安全特性：git 检查、备份分支、幂等性
+
+Author: 公众号：手工川

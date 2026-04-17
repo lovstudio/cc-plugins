@@ -1,0 +1,13 @@
+# Changelog for better-seo
+
+## v1.0.0 - 2025-12-29
+- 初始版本
+- 支持 Next.js App Router 项目 SEO 分析
+- 自动创建 SEO 工具库 (createMetadata, JSON-LD)
+- 生成 sitemap.ts、opengraph-image.tsx
+- 优化 robots.txt
+- 统一各页面 metadata
+- Admin/Auth noindex 处理
+- 构建验证
+
+Author: 公众号：手工川

@@ -1,0 +1,15 @@
+# Changelog for init-auth
+
+## v1.0.0 - 2025-12-25
+- Initial release
+- Connect to LovStudio unified Supabase backend
+- Create Supabase client with proper auth config
+- Generate TypeScript types for profiles/user_roles tables
+- Create useAuth hook with full auth flow support
+- Create Auth page with login/register/forgot-password
+- Support Google OAuth
+- Jotai atoms for guest mode
+- Environment variable setup
+- Idempotent file creation
+
+Author: 公众号：手工川

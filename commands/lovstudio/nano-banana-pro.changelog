@@ -1,0 +1,9 @@
+# Changelog for nano-banana-pro
+
+## v1.0.0 - 2025-12-10
+- Initial version (renamed from banana-prompt.md)
+- Generate optimized prompts for Nano Banana Pro model
+- Outputs Positive Prompt and Negative Prompt in code block format
+
+Author: 公众号：手工川
+Created: 2025-12-10

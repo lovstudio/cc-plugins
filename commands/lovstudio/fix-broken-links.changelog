@@ -1,0 +1,10 @@
+# Changelog for fix-broken-links
+
+## v1.0.0 - 2025-12-26
+- Initial release
+- Scan Header/Footer for broken links
+- Verify internal routes against app directory
+- Clean navigation arrays and unused imports
+- Type check validation
+
+Author: 公众号：手工川

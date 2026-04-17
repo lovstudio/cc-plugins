@@ -1,0 +1,12 @@
+# Changelog for distill
+
+## v3.6.0 - 2025-12-24
+- 集成 auto-commit：distill 完成后自动提交当前会话的代码更改
+- 新增 Step 6: Auto-Commit 流程
+- 新增 `--no-commit` 参数跳过自动提交
+- 更新 description 反映新功能
+
+## v3.5.0 - 2025-12-21
+- Previous version
+
+Author: 公众号：手工川

@@ -1,0 +1,9 @@
+# Changelog for install-zenmux-api
+
+## v1.0.0 - 2025-12-26
+- 初始版本
+- 支持 Supabase Edge Function 代理
+- 自动检测并复用已有 ZENMUX_API_KEY
+- 包含图片生成便捷方法
+
+Author: 公众号：手工川

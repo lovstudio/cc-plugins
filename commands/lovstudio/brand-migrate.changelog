@@ -1,0 +1,22 @@
+# Changelog for brand-migrate
+
+## v2.0.0 - 2026-01-07
+- **DEPRECATED**: 标记为废弃，请使用 `/lovstudio:rename-project` 代替
+- 原因：交互太多，不够自动化
+
+## v1.1.0 - 2025-12-25
+- Auto-detect current brand from package.json, directory name, README
+- Simplified to single argument: just provide new brand name
+
+## v1.0.0 - 2025-12-25
+- Initial release
+- Interactive category-based confirmation system
+- Support for multiple naming conventions (camelCase, snake_case, kebab-case, UPPER_CASE)
+- Database migration script generation
+- Dry-run mode for preview
+- Git safety checks (clean working directory)
+- Automatic file/directory renaming with git mv
+- Post-migration checklist
+- Optional commit generation
+
+Author: 公众号：手工川

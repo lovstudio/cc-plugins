@@ -1,0 +1,10 @@
+# Changelog for version-management-manual
+
+## v1.0.0 - 2025-12-21
+- Initial version
+- 继承 /version-management 所有功能
+- add 操作后阻塞式打开编辑器 (`open -W`)
+- 用户关闭编辑器后继续流程
+
+Author: 公众号：手工川
+Created: 2025-12-21
