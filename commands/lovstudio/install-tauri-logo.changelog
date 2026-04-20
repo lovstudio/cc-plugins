@@ -1,5 +1,18 @@
 # Changelog for install-tauri-logo
 
+## v4.1.0 - 2026-04-21
+### Fixes (learned from real usage in lovclip)
+- **Tray icon 白色 template 在 light mode 不可见**: 改用 alpha 作为形状，RGB 填纯黑。macOS `icon_as_template(true)` 会自动反色。避免 "-colorize white" 在透明底 logo 上失效的陷阱
+- **Silent fallback 隐藏问题**: Rust 代码模板从 `.unwrap_or_else(|_| default_window_icon)` 改为 `.expect()`，解码失败显式 panic
+- **新增诊断日志**: Rust 模板加 `log::info!` 打印 embedded bytes 和 decoded 尺寸，方便排查
+### Features
+- **Step 1 新增 source 验证**: 打印 path + md5 + dimensions，提醒用户确认是否 /gen-logo 已 publish
+- **Step 2 新增 theme color 自动检测**: 从 `CLAUDE.md` 读取，支持 `--theme-color` 覆盖。避免主题色硬编码漂移（v3→v4 曾从 #D97757 变到 #E76F4D，现统一用项目源）
+- **Step 7 强化重建提醒**: `include_bytes!` 是编译期嵌入，明确告知必须重启 `pnpm tauri:dev`，附带 log 验证项
+### Documentation
+- 新增 "Common failure modes" 小节（白底源 logo / 白色填充陷阱）
+- 补充 Design Principles（fail loud, project-aligned, template correctness, compile-time awareness）
+
 ## v4.0.0 - 2025-12-25
 ### Breaking Changes
 - **移除 Step 3 (Sync to public/)**: Web 相关的 logo 配置已拆分到 `/install-web-logo`
