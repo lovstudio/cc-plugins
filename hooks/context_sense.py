@@ -87,7 +87,12 @@ def main():
         "</auto-context>"
     )
 
-    print(json.dumps({"hookSpecificOutput": {"additionalContext": context}}))
+    print(json.dumps({
+        "hookSpecificOutput": {
+            "hookEventName": "UserPromptSubmit",
+            "additionalContext": context,
+        }
+    }))
     sys.exit(0)
 
 
