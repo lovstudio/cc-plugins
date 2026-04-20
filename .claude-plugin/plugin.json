@@ -1,11 +1,11 @@
 {
   "name": "lovstudio",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Lovstudio's personal Claude Code toolkit - skills, hooks, and commands",
   "author": {
     "name": "Lovstudio"
   },
   "repository": "https://github.com/lovstudio/claude-code-plugin",
   "license": "MIT",
-  "keywords": ["personal", "toolkit", "image-gen", "notifications"]
+  "keywords": ["personal", "toolkit", "image-gen", "commands", "notifications"]
 }

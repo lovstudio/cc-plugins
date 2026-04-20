@@ -1,5 +1,5 @@
 {
-  "name": "claude-code-plugin",
+  "name": "lovstudio-claude-code-plugin",
   "owner": {
     "name": "Lovstudio"
   },
@@ -8,7 +8,7 @@
       "name": "lovstudio",
       "source": "./",
       "description": "Lovstudio's personal Claude Code toolkit",
-      "version": "1.0.0"
+      "version": "1.2.0"
     }
   ]
 }

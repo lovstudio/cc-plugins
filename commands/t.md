@@ -1,1 +1,0 @@
-lovstudio/think/think.md
