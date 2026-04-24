@@ -1,28 +1,22 @@
 ---
 
 allowed-tools: [Read, Write, Edit, Bash, Glob, AskUserQuestion]
-description: Install or update the vibe-genius statusline (with daily token tracking + session title)
-version: "2.0.0"
+description: Install or update the vibe-genius statusline (see statusline/README.md for full component docs)
+version: "2.1.0"
 author: "公众号:手工川"
 aliases: /better-statusline
 ---
 
-# Better Statusline
+# Better Statusline — installer
 
-Installs (or updates) the **vibe-genius** statusline shipped with this plugin:
-
-```
-💥 cc-plugins (main) │ Opus 4.7 (anthropic) │ $66.78 / 5.0M │ V2.1.119 │ <session title>
-```
-
-It shows: cwd · git branch · model · provider · **daily cost / daily token usage** · Claude Code version · session title (from `/compact` summary or first user prompt).
+This command is a thin installer for the **statusline component**. The component itself lives at `statusline/` in the repo with its own `README.md` and `CHANGELOG.md` — read those for format, fields, subagent rendering, and design rationale.
 
 ## Install (default mode)
 
-### 1. Copy the script into place
+### 1. Copy the script into `~/.claude/`
 
 ```bash
-src="$CLAUDE_PLUGIN_ROOT/scripts/statusline/vibe-genius.sh"
+src="$CLAUDE_PLUGIN_ROOT/statusline/vibe-genius.sh"
 dst="$HOME/.claude/statusline.sh"
 
 # Back up any existing file so /rollback works
@@ -36,9 +30,7 @@ cp "$src" "$dst"
 chmod +x "$dst"
 ```
 
-### 2. Wire it into settings.json
-
-Edit `~/.claude/settings.json` so `statusLine` points at the script:
+### 2. Wire it into `~/.claude/settings.json`
 
 ```json
 {
@@ -54,7 +46,7 @@ If `statusLine` already exists, replace its `command` — do not duplicate the k
 
 ### 3. Verify
 
-Run `~/.claude/statusline.sh` once with a sample stdin, or just start a new Claude Code session and confirm the line renders.
+Start a new Claude Code session or run the script manually with mock stdin.
 
 ## Rollback
 
@@ -65,25 +57,12 @@ ls ~/.claude/statusline-versions/
 cp ~/.claude/statusline-versions/statusline.sh.<ts>.bak ~/.claude/statusline.sh
 ```
 
-## Subagent statusline (auto-installed)
+## Subagent statusline (no install needed)
 
-Unlike the main statusline, the plugin ships `.claude-plugin/settings.json` with a `subagentStatusLine` entry pointing at `scripts/statusline/subagent-vibe-genius.sh`. Enabling the plugin is enough — no install command needed. Rows render as:
+Already auto-wired via `.claude-plugin/settings.json`. Enabling the plugin is enough. See `statusline/README.md` for the row format.
 
-```
-<glyph> <name> · <description> · <tokens>
-```
+## Legacy inline-string mode
 
-where `<glyph>` is ⚙ (running) / ✓ (completed) / ✗ (failed) / ○ (queued).
-
-## How the daily-token counter works
-
-- Cache file: `~/.claude/.daily_tokens`, one line per `(day, session_id)` storing `byte_offset:session_token_total`.
-- Each statusLine tick only parses the **newly-appended bytes** of the current session's transcript — cost is O(delta), not O(transcript size).
-- Daily total = sum of `session_token_total` across all lines matching today. Multi-session aggregation is automatic: each session updates its own row, the sum is the day total.
-- Day rollover prunes old rows. File truncation resets the offset.
-
-## Legacy behavior (direct string)
-
-If you just want to set `statusLine.command` to an inline string (no script), pass `inline` as the argument — the old v1.0.0 flow still works for that.
+Pass `inline` as the argument to fall back to the v1.x flow that set `statusLine.command` to an inline string.
 
 ARGUMENTS: $ARGUMENTS

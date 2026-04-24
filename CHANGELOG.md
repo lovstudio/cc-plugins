@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.6.0
+
+- **statusline**: promoted from `scripts/statusline/` to top-level `statusline/` component with its own `README.md` and `CHANGELOG.md` (independent versioning, currently at v2.2.0)
+- **statusline**: plugin `settings.json` `subagentStatusLine.command` updated to the new `${CLAUDE_PLUGIN_ROOT}/statusline/...` path
+- **/lovstudio:better:statusline**: slimmed down to a thin installer — full component docs moved to `statusline/README.md`, per-version history moved to `statusline/CHANGELOG.md`; command's own `statusline.changelog` removed
+- **Nothing else changed** — same script contents as v0.5.0, just restructured
+
 ## 0.5.0
 
 - **statusline**: split into two lines — Line 1 is the status header (`cwd (branch) │ model (provider) │ cost / tokens │ version`), Line 2 is `💬 <title> · #<session-id>`. Session id returns after being dropped in 0.4.0.

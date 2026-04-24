@@ -1,6 +1,6 @@
 {
   "subagentStatusLine": {
     "type": "command",
-    "command": "${CLAUDE_PLUGIN_ROOT}/scripts/statusline/subagent-vibe-genius.sh"
+    "command": "${CLAUDE_PLUGIN_ROOT}/statusline/subagent-vibe-genius.sh"
   }
 }
